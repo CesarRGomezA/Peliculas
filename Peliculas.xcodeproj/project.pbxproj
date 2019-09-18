@@ -14,6 +14,8 @@
 		3D653F202332D2860099CF30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D653F1E2332D2860099CF30 /* LaunchScreen.storyboard */; };
 		3D653F2B2332D2860099CF30 /* PeliculasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D653F2A2332D2860099CF30 /* PeliculasTests.swift */; };
 		3D653F362332D2860099CF30 /* PeliculasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D653F352332D2860099CF30 /* PeliculasUITests.swift */; };
+		3D653F482332D44E0099CF30 /* Pelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D653F472332D44E0099CF30 /* Pelicula.swift */; };
+		3D653F4B2332D7DC0099CF30 /* CeldaPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D653F4A2332D7DC0099CF30 /* CeldaPeliculaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3D653F312332D2860099CF30 /* PeliculasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeliculasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D653F352332D2860099CF30 /* PeliculasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasUITests.swift; sourceTree = "<group>"; };
 		3D653F372332D2860099CF30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D653F472332D44E0099CF30 /* Pelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelicula.swift; sourceTree = "<group>"; };
+		3D653F4A2332D7DC0099CF30 /* CeldaPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPeliculaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,13 @@
 		3D653F142332D2840099CF30 /* Peliculas */ = {
 			isa = PBXGroup;
 			children = (
-				3D653F152332D2840099CF30 /* AppDelegate.swift */,
-				3D653F172332D2840099CF30 /* ViewController.swift */,
+				3D653F492332D4FD0099CF30 /* Models */,
+				3D653F462332D4380099CF30 /* App */,
+				3D653F452332D4140099CF30 /* Resources */,
+				3D653F442332D3FE0099CF30 /* ViewController */,
+				3D653F432332D3DF0099CF30 /* Storyboards */,
 				3D653F192332D2840099CF30 /* Main.storyboard */,
-				3D653F1C2332D2860099CF30 /* Assets.xcassets */,
 				3D653F1E2332D2860099CF30 /* LaunchScreen.storyboard */,
-				3D653F212332D2860099CF30 /* Info.plist */,
 			);
 			path = Peliculas;
 			sourceTree = "<group>";
@@ -123,6 +128,47 @@
 				3D653F372332D2860099CF30 /* Info.plist */,
 			);
 			path = PeliculasUITests;
+			sourceTree = "<group>";
+		};
+		3D653F432332D3DF0099CF30 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		3D653F442332D3FE0099CF30 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D653F172332D2840099CF30 /* ViewController.swift */,
+				3D653F4A2332D7DC0099CF30 /* CeldaPeliculaController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3D653F452332D4140099CF30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D653F1C2332D2860099CF30 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3D653F462332D4380099CF30 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D653F212332D2860099CF30 /* Info.plist */,
+				3D653F152332D2840099CF30 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		3D653F492332D4FD0099CF30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D653F472332D44E0099CF30 /* Pelicula.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D653F4B2332D7DC0099CF30 /* CeldaPeliculaController.swift in Sources */,
+				3D653F482332D44E0099CF30 /* Pelicula.swift in Sources */,
 				3D653F182332D2840099CF30 /* ViewController.swift in Sources */,
 				3D653F162332D2840099CF30 /* AppDelegate.swift in Sources */,
 			);
